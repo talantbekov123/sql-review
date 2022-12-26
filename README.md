@@ -1,4 +1,6 @@
-### Task
+### Video review of task is here https://youtu.be/dOkz7ip_bTM :point_left:
+
+#### Task
 Таблица discounts содержит скидки discount на все товары в разрезе дня (day).
   
 Таблица pricelist содержит изменения цены price на товар в разрезе
@@ -12,7 +14,7 @@
 Отобразить минимальную (среди всех валют) базовую цену в конце каждого дня 
 с учетом дневной скидки для товаров 50, 150, 300 за дни 3, 7, 12 
 
-### SQL query
+#### SQL query
 ```
 with products as (
 	select product_id, currency, day, hour, min(price) as minPrice from pricelist group by product_id, currency, day, hour
@@ -28,8 +30,7 @@ select product_id, day, min(basePrice) as minBasePrice from productsWithBasePric
 having (product_id = 50 or product_id = 150 or product_id = 300) AND (day = 3 or day = 7 or day = 12);
 
 ```
-
-### Result
+#### Result
 | product_id | day | minbaseprice |
 |------------|-----|--------------|
 | 300        | 3   | 0.16968      |
