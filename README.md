@@ -1,5 +1,7 @@
 ### Video review of task is here https://youtu.be/dOkz7ip_bTM :point_left:
 
+-----
+
 #### Task
 Таблица discounts содержит скидки discount на все товары в разрезе дня (day).
   
